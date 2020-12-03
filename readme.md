@@ -61,10 +61,18 @@ git checkout -b feature-1 dev
 @Merge manual que nao tenha um pull requeste
 git checkout dev 
 > mudando para dev 
-
-<6>
 git merge --no-ff feature-1 
 >--no ff => Git fast forwards junta um commit novo forcando
+git commit -m "atualizando"
 
+<7>
+@Criando outra release da dev
+git checkout -b feature2
+git branch
+  dev
+  feature-1
+*feature2
+  master
+git add . && git commit -m "Feature 2"
 
 

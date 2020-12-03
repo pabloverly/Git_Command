@@ -44,6 +44,7 @@ gitt add && git commit -m "Segundo commit"
 <4>
 @Fazendo uma nova branch para equipe
 git checkout -b feature-1 dev 
+> so vai consegui ir para outra branch se nao tiver pendencia de commit na branch atual (Already up-to-date.)
 
 > criando uma branch apartir das informacoes da dev
 

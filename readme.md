@@ -28,7 +28,7 @@ git branch /*identificaro a branch selecionada*/
 Realize as modificações (trabalhe)
 <3>
 Persistir os dados
-
+git commit -a -m "Segundo commit" /*adicionando e commitando na dev*/
 
 ## Info
 

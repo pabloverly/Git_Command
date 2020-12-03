@@ -10,14 +10,25 @@ git status
 ## Adicionando atualizaçoes
 git add .
 
-
 ## Confirmando atualiacao
 git commit -m "Atualizando Repositorio"
 
 ## Enviando para master
 git push -u  origin master
 
+
+
+
+## FLUXO DE DESENVOLVIMENTO
+<1>
+git checkout -b dev  /*criando uma branch dev e mudando*/
+git branch dev /*cria mas nao muda*/
+git branch /*identificaro a branch selecionada*/
+<2>
+Realize as modificações (trabalhe)
+<3>
+Persistir os dados
+
+
 ## Info
-*plugin para git no sheel
-sudo apt update && sudo apt upgrade
-sudo apt install zsh zplug
+

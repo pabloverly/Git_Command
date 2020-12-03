@@ -1,5 +1,5 @@
 
-# FLUXO GIT
+## GIT COMANDOS
 
 ## Criando repositorio
 git init
@@ -24,11 +24,19 @@ git push -u  origin master
 git checkout -b dev  /*criando uma branch dev e mudando*/
 git branch dev /*cria mas nao muda*/
 git branch /*identificaro a branch selecionada*/
+* dev
+  master
 <2>
 Realize as modificações (trabalhe)
 <3>
 Persistir os dados
 git commit -a -m "Segundo commit"ou git commit -am "Segundo commit" /*adicionando e commitando na dev*/
+<4>
+Fazendo uma nova branch para equipe
+git checkout -b feature-1 dev /*criando uma branch apartir das informacoes da dev*/
+  dev
+* feature-1
+  master 
 
 ## Info
 

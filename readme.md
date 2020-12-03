@@ -29,7 +29,7 @@ git branch /*identificaro a branch selecionada*/
 <2>
 Realize as modificações (trabalhe)
 <3>
-Persistir os dados
+Persistir os dados na branch DEV
 git commit -a -m "Segundo commit"ou git commit -am "Segundo commit" /*adicionando e commitando na dev*/
 <4>
 Fazendo uma nova branch para equipe
@@ -37,6 +37,7 @@ git checkout -b feature-1 dev /*criando uma branch apartir das informacoes da de
   dev
 * feature-1
   master 
-
+<5>
+Persistindo dados na branch FEATURE
 ## Info
 

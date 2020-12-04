@@ -16,7 +16,8 @@ git commit -m "Atualizando Repositorio"
 ## Enviando para master
 git push -u  origin master
 
-
+## Avaliando log
+git log
 
 
 ## FLUXO DE DESENVOLVIMENTO
@@ -57,22 +58,48 @@ git checkout -b feature-1 dev
 @Persistindo dados na branch FEATURE
 ## Info
 
-<6>
+<6 - mergo e nao push/pull-requeste>
 @Merge manual que nao tenha um pull requeste
 git checkout dev 
 > mudando para dev 
+
 git merge --no-ff feature-1 
 >--no ff => Git fast forwards junta um commit novo forcando
+
 git commit -m "atualizando"
 
 <7>
 @Criando outra release da dev
 git checkout -b feature2
-git branch
+git branch 
   dev
   feature-1
+>nova release criada agora bastar trabalhar
+
 *feature2
   master
-git add . && git commit -m "Feature 2"
 
+git add . && git commit -m "Feature 2"
+>Persistindo
+
+
+
+<8>
+@Push (externo - github)
+git remote add origin https://github.com/pabloverly/Git_Command.git
+>adicionando conexao remota
+
+git remote -v
+>verificando o link 
+
+git push origin master
+>enviando a master local para master remoto
+
+
+
+
+
+# plugin
+git blame para vscode 
+>Mostra o autor dos commits
 

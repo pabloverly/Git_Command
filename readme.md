@@ -1,26 +1,26 @@
 
-## GIT COMANDOS
+## - GIT COMANDOS
 
-## Criando repositorio
+## [x] Criando repositorio
 git init
 
-## Verificando as mudancas
+## [x] Verificando as mudancas
 git status
 
-## Adicionando atualizaçoes
+## [x] Adicionando atualizaçoes
 git add .
 
-## Confirmando atualiacao
+## [x] Confirmando atualiacao
 git commit -m "Atualizando Repositorio"
 
-## Enviando para master
+## [x] Enviando para master
 git push -u  origin master
 
-## Avaliando log
+## [x] Avaliando log
 git log
 
 
-## FLUXO DE DESENVOLVIMENTO
+## - FLUXO DE DESENVOLVIMENTO
 <1>
 git checkout -b dev  
 >criando uma branch dev e mudando
@@ -67,7 +67,6 @@ git merge --no-ff feature-1
 >--no ff => Git fast forwards junta um commit novo forcando
 
 git commit -m "atualizando"
-
 <7>
 @Criando outra release da dev
 git checkout -b feature2
@@ -95,11 +94,20 @@ git remote -v
 git push origin master
 >enviando a master local para master remoto
 
+git push origin dev
+git push origin feature-1
+git push origin feature2
+>enviando as demais branch
+
+<9>
+@Para fazer uj pull request necessrio entrar na aba pull request do github do projeto e efetuar a ação apontando o branch source e o target
+@Depois o mantenedor vai ver que terar uma alerta de novo pull requeste e terar que fazer o code review (revisao das mudanca)
 
 
 
 
-# plugin
+
+---
+# Plugin
 git blame para vscode 
 >Mostra o autor dos commits
-

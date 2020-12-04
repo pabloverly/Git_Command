@@ -1,25 +1,26 @@
 
-## GIT COMANDOS
+## - GIT COMANDOS
 
-## Criando repositorio
+## [x] Criando repositorio
 git init
 
-## Verificando as mudancas
+## [x] Verificando as mudancas
 git status
 
-## Adicionando atualizaçoes
+## [x] Adicionando atualizaçoes
 git add .
 
-## Confirmando atualiacao
+## [x] Confirmando atualiacao
 git commit -m "Atualizando Repositorio"
 
-## Enviando para master
+## [x] Enviando para master
 git push -u  origin master
 
+## [x] Avaliando log
+git log
 
 
-
-## FLUXO DE DESENVOLVIMENTO
+## - FLUXO DE DESENVOLVIMENTO
 <1>
 git checkout -b dev  
 >criando uma branch dev e mudando
@@ -57,14 +58,56 @@ git checkout -b feature-1 dev
 @Persistindo dados na branch FEATURE
 ## Info
 
-<6>
+<6 - mergo e nao push/pull-requeste>
 @Merge manual que nao tenha um pull requeste
 git checkout dev 
 > mudando para dev 
 
-<6>
 git merge --no-ff feature-1 
 >--no ff => Git fast forwards junta um commit novo forcando
 
+git commit -m "atualizando"
+<7>
+@Criando outra release da dev
+git checkout -b feature2
+git branch 
+  dev
+  feature-1
+>nova release criada agora bastar trabalhar
+
+*feature2
+  master
+
+git add . && git commit -m "Feature 2"
+>Persistindo
 
 
+
+<8>
+@Push (externo - github)
+git remote add origin https://github.com/pabloverly/Git_Command.git
+>adicionando conexao remota
+
+git remote -v
+>verificando o link 
+
+git push origin master
+>enviando a master local para master remoto
+
+git push origin dev
+git push origin feature-1
+git push origin feature2
+>enviando as demais branch
+
+<9>
+@Para fazer uj pull request necessrio entrar na aba pull request do github do projeto e efetuar a ação apontando o branch source e o target
+@Depois o mantenedor vai ver que terar uma alerta de novo pull requeste e terar que fazer o code review (revisao das mudanca)
+
+
+
+
+
+---
+# Plugin
+git blame para vscode 
+>Mostra o autor dos commits
